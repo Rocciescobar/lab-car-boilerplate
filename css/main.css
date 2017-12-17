@@ -1,1 +1,88 @@
-/* Los estilos de tu proyecto */
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;  
+  width: 100%;
+}
+
+.bg-image-1 {
+  background-image: url(../assets/images/taxi.jpg);
+  height: 550px;
+}
+
+.bg-image-2 {
+  background-image: url(../assets/images/conduce.jpg);
+  height: 440px;
+}
+
+.img-phone {
+  background-image: url(../assets/images/iPhone6Plus.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 350px;
+  width: 310px;
+}
+
+.img-map {
+  background-image: url(../assets/images/mapa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 348px;
+}
+
+.img-gplay {
+  background-image: url(../assets/images/enBadgeWebGeneric.png);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  height: 80px;
+  width: 190px;
+}
+
+.img-apple {
+  background-image: url(../assets/images/appstore.png);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  height: 80px;
+  width: 190px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-yellow {
+  background-color: #ffc107;
+}
+
+.bg-shadow {
+  background-color: #2b2b2b;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.white-border-cel {
+  border: 1.3px solid #ffffff;
+  margin: 40px auto;
+  padding: 40px;
+}
+
+.white-border-map {
+  border: 1.3px solid #ffffff;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.centered {
+  align-items: center;
+  display: flex;
+}
+
+.height-inherit {
+  height: inherit;
+}
