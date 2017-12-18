@@ -23,10 +23,13 @@ Este reto consiste en replicar una página, para ello se utilizará una estructu
 * La paleta de colores, usada principalmente en los fondos, son los siguientes: #ffc107, #ffffff, #2b2b2b, #a9a9a9, #08ac9d.
 
 La estructura de la página es la siguiente:
+
 1. **LA VERSIÓN WEB (Desktop)**
+
 ![Versión-web](assets/docs/desktop.png "Versión-web")
 
 2. **LA VERSIÓN MOVIL**
+
 ![Versión-mobile](assets/docs/mobile.png "Versión-mobile")
 
 3. **MODALES**
