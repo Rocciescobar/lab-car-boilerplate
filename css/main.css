@@ -143,6 +143,7 @@
   width: 267px;
 }
 
+/* Versión web (desktop) */
 @media (min-width: 768px) {
   .img-media {
     background-position: center center;
