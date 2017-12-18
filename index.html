@@ -15,39 +15,50 @@
   <body>
     <header>
       <!-- Inicia barra de navegación -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-              <img src="assets/images/logoForma.png" alt="logo">
-            </a>
-          </div>      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Viaja</a></li>
-              <li><a href="#">Conduce</a></li>
-              <li><a href="#">Inicia Sesión</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+      <nav class="navbar navbar-default bg-white border-none">
+        <div class="container-fluid mar-top">
+          <div class="row">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header col-sm-6 col-sm-push-1">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logoForma.png" alt="logo" class="large-size-logo">
+              </a>
+            </div>      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right col-sm-6 col-sm-pull-1" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="h4"><a href="#viaja">Viaja</a></li>
+                <li class="h4"><a href="#conduce">Conduce</a></li>
+                <li class="h4"><a href="#">Inicia Sesión</a></li>
+              </ul>
+            </div>
+          </div> <!-- Cierra row-->
+        </div>
       </nav>
     </header>
     <!-- Sección descarga el app -->
     <section class="bg-image bg-image-1">
       <div class="container-fluid height-inherit">
         <div class="row height-inherit centered">
-          <div class="text-white bg-yellow col-xs-9 col-xs-offset-3">
-            <p class="h1">Comienza a viajar</p>
-            <p class="h1">con <img src="assets/images/logoBlanco.png" alt="logo-blanco"></p>
-            <button type="button" class="btn btn-default btn-lg"><b>Descarga el app</b></button>
+          <div class="text-white bg-yellow col-xs-9 col-xs-offset-3 col-sm-5 col-sm-offset-7">
+            <p class="h1 hidden-sm hidden-md hidden-lg">Comienza a viajar</p>
+            <p class="h1 hidden-sm hidden-md hidden-lg">con <img src="assets/images/logoBlanco.png" alt="logo-blanco" class="small-size-logo"></p>
+            <button type="button" class="btn btn-default btn-lg mar-top mar-bot hidden-sm hidden-md hidden-lg"><b>Descarga el app</b></button>
+            <p class="h1 hidden-xs">Disfruta del viaje <br> Eres dueño de tu tiempo</p>         
+            <p class="h3 hidden-xs">Viaja con <img src="assets/images/logoBlanco.png" alt="logo-blanco" class="small-size-logo"></p>
+            <button type="button" class="btn btn-default btn-lg mar-top mar-bot hidden-xs"><b>REGÍSTRATE</b></button>
+            <div class="text-center hidden-xs">
+              <hr class="hr-width">
+              <span class="span-margin"> O bien </span>
+              <hr class="hr-width">
+            </div>
+            <button type="button" class="btn btn-default btn-lg mar-top mar-bot hidden-xs"><b>Conviértete en un conductor</b></button>
           </div>
         </div>
       </div>
@@ -55,21 +66,28 @@
     <!-- Sección celular -->
     <section class="bg-yellow text-white">
       <div class="container-fluid">
-        <div class="white-border-cel">
-          <p class="h3 text-center">La nueva app</p>
-          <div class="img-phone center-block"></div>
+        <div class="row white-border-cel">
+          <div class="col-sm-6 col-md-4">
+            <p class="h3 text-center hidden-sm hidden-md hidden-lg">La nueva app</p>
+            <div class="img-phone center-block img-responsive"></div>
+          </div>          
+          <div class="col-sm-6 col-md-4 col-md-offset-1 hidden-xs">
+            <h2><b>Descarga la nueva app</b></h2>
+            <p class="h2"><small class="text-white">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</small></p>
+            <p class="h2"><small class="text-white">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</small></p>
+          </div>
         </div>
-        <p class="h4">Llega a tu destino aún más rápido</p>
+        <p class="h4 hidden-sm hidden-md hidden-lg">Llega a tu destino aún más rápido</p>
       </div>      
     </section>
     <!-- Sección conduce -->
-    <section class="bg-image bg-image-2">
+    <section class="bg-image bg-image-2 img-media" id="conduce">
       <div class="container-fluid height-inherit">
         <div class="row height-inherit">
-          <div class="overlay height-inherit centered col-xs-12">
+          <div class="overlay height-inherit centered col-xs-12 col-sm-4 col-sm-push-8">
             <div class="text-white">
-              <p class="h4"><b>Conduce cuando quieras</b></p>
-              <p class="h4">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+              <h2><b>Conduce cuando quieras</b></h2>
+              <p class="h2"><small class="text-white">LabCar es una opción flexible para alcanzar tus metas financieras.</small></p>
               <button type="button" class="btn bg-yellow btn-lg"><b>Conviértete en conductor</b></button>
             </div>
           </div>
@@ -77,30 +95,31 @@
       </div>
     </section>
     <!-- Sección tarifas y ruta -->
-    <section class="bg-yellow ">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="text-white col-xs-12">
-            <h3>Tarifas</h3>
-            <p class="h4">Consulta las tarifas LabCar aquí</p>
+    <section class="bg-yellow" id="viaja">
+      <div class="container">
+        <div class="row mar-top mar-bot">
+          <div class="text-white mar-top col-xs-12 col-sm-6">
+            <h3 class="mar-top">Tarifas</h3>
+            <p class="h4 mar-top mar-bot">Consulta las tarifas LabCar aquí</p>
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label for="input1" class="col-xs-1 control-label"><img src="assets/images/shape.png" alt="icono1"></label>
-                <div class="col-xs-9">
+                <div class="col-xs-8">
                   <input type="search" class="form-control" id="input1" placeholder="Ingrese su punto de partida">
                 </div>
               </div>
               <div class="form-group">
                 <label for="input2" class="col-xs-1 control-label"><img src="assets/images/shape2.png" alt=""></label>
-                <div class="col-xs-9">
+                <div class="col-xs-8">
                   <input type="search" class="form-control" id="input2" placeholder="Ingrese su destino">
                 </div>
               </div>
             </form>
             <form class="form-horizontal">
-            <button type="button" class="btn btn-default center-block"><b>¡TRAZAR RUTA!</b></button>        
+            <button type="button" class="btn btn-default center-block mar-top mar-bot"><b>¡TRAZAR RUTA!</b></button>        
           </div>
-          <div class="col-xs-12">
+          <!-- Mapa  -->
+          <div class="mar-top col-xs-12 col-sm-6">
             <figure class="white-border-map">
               <div class="img-map"></div>
             </figure>
@@ -112,11 +131,11 @@
     <footer class="bg-shadow">
       <div class="container">
         <figure>
-          <img src="assets/images/logoBlanco.png" alt="logo-blanco">
+          <img src="assets/images/logoBlanco.png" alt="logo-blanco" class="large-size-logo mar-top">
         </figure>
         <hr>
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-xs-6 col-sm-3 col-sm-push-3"> <!-- Lista 1 -->
             <ul class="list-unstyled text-white">
               <li>Viaja</li>
               <br>
@@ -135,7 +154,26 @@
               <li>Seguridad</li>
             </ul>
           </div>
-          <div class="text-white col-xs-3 col-xs-offset-3">
+          <div class="hidden-xs col-sm-3 col-sm-push-3"> <!-- Lista 2 -->
+            <ul class="list-unstyled text-white">
+              <li>Oportunidades</li>
+              <br>
+              <li>Nuestra historia</li>
+              <br>
+              <li>API de LabCar</li>
+              <br>
+              <li>Evento</li>
+              <br>
+              <li>Desarrolladores</li>
+              <br>
+              <li>Servicios</li>
+              <br>
+              <li>Laboratoria</li>
+              <br>
+              <li>Coders</li>
+            </ul>
+          </div>
+          <div class="text-white col-xs-6 col-sm-3 col-sm-pull-6"> <!-- Redes sociales -->
             <ul class="list-inline">
               <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
               <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -145,8 +183,10 @@
             </ul>
             <br>
           </div>
-          <div class="img-gplay col-xs-3 col-xs-offset-3"></div>
-          <div class="img-apple col-xs-3 col-xs-offset-3"></div>
+          <div class="col-xs-6 col-sm-3"> <!-- Imagenes de gplay y apple -->
+            <div class="img-footer img-gplay img-responsive"></div> <!-- Imagen google play -->
+            <div class="img-footer img-apple img-responsive"></div> <!-- Imagen apple -->
+          </div>
         </div>
         <hr>
         <p class="text-white">&#169 2017 LabCar technologies Inc.</p>
