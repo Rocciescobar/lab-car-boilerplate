@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
     <!--Import bootstrap.css-->
     <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css"/>
@@ -227,32 +228,31 @@
     </section>
     <!-- Sección tarifas y ruta -->
     <section class="bg-yellow" id="viaja">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row mar-top mar-bot">
-          <div class="text-white mar-top col-xs-12 col-sm-6">
+          <div class="text-white col-xs-12 col-sm-5">
             <h3 class="mar-top">Tarifas</h3>
             <p class="h4 mar-top mar-bot">Consulta las tarifas LabCar aquí</p>
-            <form class="form-horizontal" role="form">
+            <form class="form-horizontal col-xs-10 col-xs-offset-1" role="form">
               <div class="form-group">
-                <label for="input1" class="col-xs-1 control-label"><img src="assets/images/shape.png" alt="icono1"></label>
-                <div class="col-xs-8">
-                  <input type="search" class="form-control" id="input1" placeholder="Ingrese su punto de partida">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="far fa-dot-circle"></i></div>
+                  <input type="text" class="form-control" id="input1" placeholder="Ingrese su punto de partida">
                 </div>
               </div>
               <div class="form-group">
-                <label for="input2" class="col-xs-1 control-label"><img src="assets/images/shape2.png" alt=""></label>
-                <div class="col-xs-8">
-                  <input type="search" class="form-control" id="input2" placeholder="Ingrese su destino">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fas fa-location-arrow"></i></div>
+                  <input type="text" class="form-control" id="input2" placeholder="Ingrese su destino">
                 </div>
               </div>
             </form>
-            <form class="form-horizontal">
-            <button type="button" class="btn btn-default center-block mar-top mar-bot"><b>¡TRAZAR RUTA!</b></button>        
+            <button type="submit" id="route" class="btn btn-default center-block mar-top mar-bot"><b>¡TRAZAR RUTA!</b></button>        
           </div>
           <!-- Mapa  -->
-          <div class="mar-top col-xs-12 col-sm-6">
+          <div class="col-xs-12 col-sm-7">
             <figure class="white-border-map">
-              <div class="img-map"></div>
+              <div id="map" class="img-map"></div>
             </figure>
           </div> 
         </div>       
@@ -266,7 +266,7 @@
         </figure>
         <hr>
         <div class="row">
-          <div class="col-xs-6 col-sm-3 col-sm-push-3"> <!-- Lista 1 -->
+          <div class="col-xs-6 col-sm-3 col-sm-push-3">
             <ul class="list-unstyled text-white">
               <li>Viaja</li>
               <br>
@@ -285,7 +285,7 @@
               <li>Seguridad</li>
             </ul>
           </div>
-          <div class="hidden-xs col-sm-3 col-sm-push-3"> <!-- Lista 2 -->
+          <div class="hidden-xs col-sm-3 col-sm-push-3">
             <ul class="list-unstyled text-white">
               <li>Oportunidades</li>
               <br>
@@ -304,7 +304,7 @@
               <li>Coders</li>
             </ul>
           </div>
-          <div class="text-white col-xs-6 col-sm-3 col-sm-pull-6"> <!-- Redes sociales -->
+          <div class="text-white col-xs-6 col-sm-3 col-sm-pull-6">
             <ul class="list-inline">
               <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
               <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -314,9 +314,9 @@
             </ul>
             <br>
           </div>
-          <div class="col-xs-6 col-sm-3"> <!-- Imagenes de gplay y apple -->
-            <div class="img-footer img-gplay img-responsive"></div> <!-- Imagen google play -->
-            <div class="img-footer img-apple img-responsive"></div> <!-- Imagen apple -->
+          <div class="col-xs-6 col-sm-3">
+            <div class="img-footer img-gplay img-responsive"></div>
+            <div class="img-footer img-apple img-responsive"></div>
           </div>
         </div>
         <hr>
@@ -326,6 +326,7 @@
     <!--Import jQuery before bootstrap.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7AMZ9KG-SK6NYAFAx6Z_wy9fsmjKh9kg&callback=initMap&libraries=places" async defer></script> 
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

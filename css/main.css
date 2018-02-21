@@ -30,7 +30,7 @@
 }
 
 .img-map {
-  background-image: url(../assets/images/mapa.jpg);
+  /* background-image: url(../assets/images/mapa.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 348px;
